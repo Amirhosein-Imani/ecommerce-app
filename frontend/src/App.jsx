@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React from 'react'
 import {Routes,Route} from 'react-router-dom'
 import Home from './pages/Home'
@@ -10,11 +9,14 @@ import Contact from './pages/Contact'
 import Cart from './pages/Cart'
 import About from './pages/About'
 import Product from './pages/Product'
+import Navbar from './components/Navbar'
 
 const App = () => {
   return (
     <div className='px-4 sm:px-[5vh] md:px-[7vh] lg:px-[9vh]'>
-
+        
+        <Navbar />
+        
         <Routes>
 
           <Route path='/' element = {<Home/>} />
