@@ -18,7 +18,7 @@ const LatestCollection = () => {
         <div className='text-center py-8 text-3xl'>
 
             <Title text1={'LATEST'} text2={'COLLECTIONS'}/>
-            <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600 font-medium'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae quo commodi minima animi adipisci harum quaerat ex quos.</p>
+            <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae quo commodi minima animi adipisci harum quaerat ex quos.</p>
 
             {/* rendering products */}
 
@@ -26,7 +26,7 @@ const LatestCollection = () => {
 
               {
                 latestProducts.map((item , index) => (
-                  <ProductItem key={index} id={item.id} image={item.image} name={item.name} price={item.price}/>
+                  <ProductItem key={index} id={item._id} image={item.image} name={item.name} price={item.price}/>
                 ))
               }
 
