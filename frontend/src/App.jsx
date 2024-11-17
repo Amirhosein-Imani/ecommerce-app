@@ -10,6 +10,7 @@ import Cart from './pages/Cart'
 import About from './pages/About'
 import Product from './pages/Product'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -30,6 +31,8 @@ const App = () => {
           <Route path='/product/:productId' element = {<Product/>} />
 
         </Routes>
+
+        <Footer />
 
     </div>
   )
