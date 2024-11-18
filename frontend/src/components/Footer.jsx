@@ -46,6 +46,13 @@ const Footer = () => {
 
         </div>
 
+        <div>
+
+            <hr />
+            <p className='py-5 text-sm text-center'>Copyright 2024@ AmirhoseinImani - All Right Reserved.</p>
+
+        </div>
+
     </div>
 
   )
