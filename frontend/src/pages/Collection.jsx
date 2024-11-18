@@ -1,9 +1,90 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
+import { ShopContext } from '../context/ShopContext'
+import { assets } from '../assets/assets';
 
 const Collection = () => {
+
+  const { products } = useContext(ShopContext);
+  const [showFilter , setShowFilter] = useState(false)
+
   return (
-    <div></div>
+
+    <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t'>
+
+        {/* filter options */}
+
+        <div className='min-w-60'>
+
+            <p className='my-2 text-xl flex items-center cursor-pointer gap-2' onClick={() => (setShowFilter(!showFilter))}>FILTERS
+              <img src={assets.dropdown_icon} alt="Dropdown Icon" className={`h-3 sm:hidden ${showFilter ? 'rotate-90' : ''}`} />
+            </p>
+
+            {/* category filter */}
+
+            <div className={`border border-gray-300 py-3 pl-5 mt-6 ${showFilter ? '' : 'hidden'} sm:block`}>
+
+              <p className='mb-3 text-sm font-medium'>CATEGORIES</p>
+
+              <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
+
+                <p className='flex gap-2'>
+
+                  <input type="checkbox" value={'Men'} className='w-3' /> Men
+
+                </p>
+
+                <p className='flex gap-2'>
+
+                  <input type="checkbox" value={'Women'} className='w-3' /> Women
+
+                </p>
+
+                <p className='flex gap-2'>
+
+                  <input type="checkbox" value={'Kids'} className='w-3' /> Kids
+
+                </p>
+
+              </div>
+
+            </div>
+
+            {/* subcategory filter */}
+
+            <div className={`border border-gray-300 py-3 pl-5 my-5 ${showFilter ? '' : 'hidden'} sm:block`}>
+
+              <p className='mb-3 text-sm font-medium'>  TYPE</p>
+
+              <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
+
+                <p className='flex gap-2'>
+
+                  <input type="checkbox" value={'Topwear'} className='w-3' /> Topwear
+
+                </p>
+
+                <p className='flex gap-2'>
+
+                  <input type="checkbox" value={'Bottomwear'} className='w-3' /> Bottomwear
+
+                </p>
+
+                <p className='flex gap-2'>
+
+                  <input type="checkbox" value={'Winterwear'} className='w-3' /> Winterwear
+
+                </p>
+
+              </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
   )
+
 }
 
 export default Collection
