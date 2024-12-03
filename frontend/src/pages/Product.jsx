@@ -115,6 +115,26 @@ const Product = () => {
 
       </div>
 
+      {/* ---------- description & review section ---------- */}
+
+      <div className='mt-20'>
+
+                <div className='flex'>
+
+                  <b className='border px-5 py-3 text-sm'>Description</b>
+                  <p className='border px-5 py-3 text-sm'>Reviews (125)</p>
+
+                </div>
+
+                <div className='flex flex-col gap-4 border px-6 py-6 text-sm text-gray-500'>
+
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, eaque exercitationem esse dolorem quisquam inventore nesciunt aliquid quae necessitatibus, earum repellendus quidem fugiat eum error. Ea dolor iste est mollitia, maxime cumque facere, maiores ab minus, rerum architecto officiis incidunt qui assumenda odio ducimus eius id harum quasi porro tempora eligendi temporibus? Quis totam reiciendis, porro ullam aliquid, optio sint facilis repudiandae consectetur veritatis magni assumenda consequuntur nisi est, doloremque perspiciatis! Neque eos quo, laudantium obcaecati veritatis sint exercitationem expedita sit necessitatibus officiis amet sunt modi maxime aperiam tenetur culpa totam praesentium ipsa blanditiis non ex! Voluptatum totam pariatur rerum.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quod. Quod, fugiat debitis illum ad qui nesciunt temporibus dolores fuga magnam delectus, cumque minima? Laudantium nemo aliquid velit officia perspiciatis, in natus dolor, praesentium impedit placeat quas cumque temporibus error culpa repudiandae incidunt aliquam odit sapiente architecto pariatur? Expedita, ipsa rerum! Officiis maxime, similique sint eligendi voluptatum error animi corporis quidem. Odit voluptatum incidunt, qui ipsam provident harum quidem architecto a impedit, quo obcaecati mollitia!</p>
+
+                </div>
+
+      </div>
+
 
 
     </div>
