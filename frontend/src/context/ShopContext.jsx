@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react"
+import { createContext , useState } from "react"
 import { products } from '../assets/assets'
 import { toast } from "react-toastify";
 
@@ -9,10 +9,8 @@ const ShopContextProvider = (props) => {
 
     const currency = '$';
     const delivery_fee = '10';
-
     const [search , setSearch] = useState('');
     const [showSearch , setShowSearch] = useState(false);
-
     const [cartItems , setCartItems] = useState({});
 
     const addToCart = async (itemId , size) => {
