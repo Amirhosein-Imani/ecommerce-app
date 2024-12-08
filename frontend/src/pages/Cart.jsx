@@ -6,7 +6,7 @@ import { assets } from '../assets/assets';
 
 const Cart = () => {
 
-  const { products , currency , cartItems } = useContext(ShopContext);
+  const { products , currency , cartItems , updateQuantity } = useContext(ShopContext);
 
   const [cartData , setCartData] = useState([]);
 
@@ -85,7 +85,7 @@ const Cart = () => {
               
               <div className='sm:w-[20%]'>
 
-                <img src={assets.bin_icon} alt="Bin Icon" className='w-4 mr-4 sm:w-5 cursor-pointer' />
+                <img onClick={() => updateQuantity(item._id , item.size , 0)} src={assets.bin_icon} alt="Bin Icon" className='w-4 mr-4 sm:w-5 cursor-pointer' />
 
               </div>
               
