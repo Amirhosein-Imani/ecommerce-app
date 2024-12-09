@@ -58,7 +58,7 @@ const Cart = () => {
 
             <div key={index} className='py-4 border-t border-b text-gray-700 flex flex-col sm:flex-row items-center gap-4'>
 
-              <div className='flex items-start gap-6 sm:w-[40%] flex-shrink-0'>
+              <div className='flex items-start gap-6 sm:w-[40%]'>
 
                 <img src={productData.image[0]} alt="Cart Product Image" className='w-16 sm:w-20' />
 
@@ -79,7 +79,7 @@ const Cart = () => {
 
               <div className='sm:w-[20%]'>
 
-                <input type="number" min={1} defaultValue={item.quantity} className='border max-w-10 sm:max-w-20 px-1 sm:px-2 py-1' />
+                <input onChange={(e) => e.target.value === '' || e.target.value === '0' ? null : updateQuantity(item._id , item.size , Number(e.target.value))} type="number" min={1} defaultValue={item.quantity} className='border max-w-10 sm:max-w-20 px-1 sm:px-2 py-1' />
 
               </div>
               
