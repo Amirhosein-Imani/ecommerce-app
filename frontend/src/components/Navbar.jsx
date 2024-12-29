@@ -15,7 +15,7 @@ const Navbar = () => {
         
         <Link to='/'>
 
-            <img src={assets.logo} className='w-36' alt="Logo" />
+            <img src={assets.Amirhosein_Imani} className='w-20 aspect-square rounded-full' alt="Amirhosein Imani" />
 
         </Link>
         
